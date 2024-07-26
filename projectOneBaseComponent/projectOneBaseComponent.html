@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Base Component">
+        <lightning-button label={buttonLabel} onclick={handleButtonClick}></lightning-button>
+
+        <div class="slds-var-m-around_small" >
+            <c-project-one-modal-component is-modal-open={isModalOpen} 
+            onclosemodal={handleCloseModal}
+            onsave={handleSave}></c-project-one-modal-component>
+        </div>
+
+    </lightning-card>
+</template>
